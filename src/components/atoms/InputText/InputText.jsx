@@ -1,8 +1,8 @@
 import React from 'react';
 
 const InputText = (props) => {
-  const { value } = props;
-  return <input type="text" value={value} />;
+  const { value, onChange } = props;
+  return <input type="text" value={value} onChange={onChange} />;
 };
 
 export default InputText;

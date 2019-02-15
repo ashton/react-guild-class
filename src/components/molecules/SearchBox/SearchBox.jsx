@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Button, InputText } from '../../atoms';
 
-const SearchBox = () => (
+const SearchBox = ({ searchText, onChange, onSearch }) => (
   <div>
-    <InputText />
-    <Button text="Buscar" />
+    <InputText value={searchText} onChange={onChange} />
+    <Button text="Buscar" onClick={onSearch} />
   </div>
 );
 
